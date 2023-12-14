@@ -79,6 +79,7 @@ fn make_table() -> HashMap<i64, (i64, i64)> {
     return table;
 }
 
+#[allow(dead_code)]
 fn make_table_1() -> HashMap<i64, (i64, i64)> {
     let mut table = HashMap::new();
     let reader = fs::read_to_string("input2.txt").expect("coudln't read");
